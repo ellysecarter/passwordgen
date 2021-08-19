@@ -25,11 +25,15 @@ function generatePassword() {
     window.alert ("Password must be at least 8 characters.")
     var passwordLength = window.prompt('How many characters would you like to have? (Choose between 8 and 128)');
   }
+  else {
+    window.alert ("You have chosen " + passwordLength + " characters.") 
 
   if (passwordLength > 128) {
     window.alert ("Password cannot be over 128 characters.")
     var passwordLength = window.prompt('How many characters would you like to have? (Choose between 8 and 128)');
   }
+  }
+
 
 var selectedCharacters = []
 
@@ -38,41 +42,47 @@ var selectedCharacters = []
   if (passwordLower === true) {
     selectedCharacters.push(...lowerArr)
   }
+  else {
+    window.alert ("You have denied lowercase letters.")
+  }
 
   var passwordUpper = window.confirm('Would you like uppercase letters?');
   if (passwordUpper === true) {
     selectedCharacters.push(...upperArr)
+  }
+  else {
+    window.alert ("You have denied uppercase letters.")
   }
 
   var passwordNumeric = window.confirm('Would you like to add numbers?');
   if (passwordNumeric === true) {
     selectedCharacters.push(...numericArr)
   }
+  else {
+    window.alert ("You have denied numeric characters.")
+  }
 
   var passwordSpecial = window.confirm('Would you like special characters?');
   if (passwordSpecial === true) {
     selectedCharacters.push(...specialArr)
   }
+  else {
+    window.alert ("You have denied special characters.")
+  }
 
   console.log (selectedCharacters)
 
 
-// Add shuffle array here 
+// Add Math here
+
+// var generatePassword = function() {
+//   var value Math.floor(Math.random() *
+//   return value
+// }
 
 
-var pwLength = String[][] arrays = {lowerArr,upperArr,numericArr,specialArr}
-
-var generatePassword = 
-  pwLength[Math.floor(Math.random() *
-  pwLength.pwLength];
-
-
-  // const shuffleArray = passwordLength => {
-  //   for (let i = passwordLength - 1; i > 0; i--){
-  //     const
-  //   }
-  // }
-
+  // for (var i = 0; i < 8; i++) {
+  //   var pwLength = Math.floor (Math.random() * 8) + 1;
 
 // for (let passwordLength = 0; passwordLength < 8; passwordLength++) 
 
