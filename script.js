@@ -10,10 +10,10 @@ function writePassword() {
 
 }
 
-var lowerArr = ['a','b','c']
-var upperArr = ['A', 'B', 'C']
-var numericArr = ['1','2','3']
-var specialArr = ['@','$','&']
+var lowerArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','y','z']
+var upperArr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+var numericArr = ['1','2','3','4','5','6','7','8','9','0']
+var specialArr = ['@','$','&','!','#','%','^','*','+','=','?','<','>']
 
 function generatePassword() {
   
@@ -23,12 +23,12 @@ function generatePassword() {
   
   if (passwordLength < 8){
     window.alert ("Password must be at least 8 characters.")
-    return
+    var passwordLength = window.prompt('How many characters would you like to have? (Choose between 8 and 128)');
   }
 
   if (passwordLength > 128) {
     window.alert ("Password cannot be over 128 characters.")
-    return
+    var passwordLength = window.prompt('How many characters would you like to have? (Choose between 8 and 128)');
   }
 
 var selectedCharacters = []
@@ -56,10 +56,27 @@ var selectedCharacters = []
 
   console.log (selectedCharacters)
 
-// password is displayed in on page in the box titled "your secure password"
-// use id password here 
 
-return "random password here"
+// Add shuffle array here 
+
+
+var pwLength = String[][] arrays = {lowerArr,upperArr,numericArr,specialArr}
+
+var generatePassword = 
+  pwLength[Math.floor(Math.random() *
+  pwLength.pwLength];
+
+
+  // const shuffleArray = passwordLength => {
+  //   for (let i = passwordLength - 1; i > 0; i--){
+  //     const
+  //   }
+  // }
+
+
+// for (let passwordLength = 0; passwordLength < 8; passwordLength++) 
+
+return "Random password"
 }
 
 
