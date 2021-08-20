@@ -49,15 +49,16 @@ function writePassword() {
     window.alert ("You have denied special characters.")
   }
 
-      var password = "";
+      var password = alert("");
       for (var i = 0; i < passwordLength; i++) {
         password += emptyString.charAt(
           Math.floor(Math.random() * emptyString.length)
         );
       }
-      
       console.log(password);
       return password;
+
+      
     }
     generatePassword()
   } 
