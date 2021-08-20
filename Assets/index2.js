@@ -1,6 +1,9 @@
 var generateBtn = document.querySelector("#generate");
 var passwordText = document.querySelector("#password");
 var delayInMilliseconds = 1000;
+// Add event listener to generate button
+
+generateBtn.addEventListener("click", writePassword());
 
 function writePassword() {
   setTimeout (function() {
@@ -65,8 +68,3 @@ function writePassword() {
   }
 }, 500);
 }
-
-
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword());
