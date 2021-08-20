@@ -26,5 +26,5 @@ There was a slight delay in HTML page loading before the prompt so I added a tim
 ## Contact Details
 email: ellysecarter@yahoo.com
 
-Technologies Used
+## Technologies Used
 HTML CSS Javascript
