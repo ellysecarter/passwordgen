@@ -1,10 +1,9 @@
 var generateBtn = document.querySelector("#generate");
-var delayInMilliseconds = 1000;
 
 
+// Generate password here
 function writePassword() {
   var passwordText = document.querySelector("#password");
-  // setTimeout (function() {
   var passwordLength = window.prompt(
     "How many characters would you like to have? (Choose between 8 and 128)"
   );
@@ -65,8 +64,7 @@ function writePassword() {
 } else {
   window.alert("Password must be between 8 and 128 characters.");
   }
-// }, 500);
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword());
+generateBtn.addEventListener("click", writePassword);
