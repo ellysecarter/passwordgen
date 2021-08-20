@@ -16,22 +16,22 @@ function writePassword() {
       );
 
       var emptyString = "";
-      var passwordUpper = "ABCDEFGHIJKLMNOPQRSTUVQYXZ";
-      var passwordLower = "abcdefghijklmnopqrstuvwxyz";
-      var passwordNumeric = "0987654321";
-      var passwordSpecial = '!@#$%^&*()_+={}[]|?/><:;"';
+      var stringUpper = "ABCDEFGHIJKLMNOPQRSTUVQYXZ";
+      var stringLower = "abcdefghijklmnopqrstuvwxyz";
+      var stringNumeric = "0987654321";
+      var stringSpecial = '!@#$%^&*()_+={}[]|?/><:;"';
 
       if (passwordUpper === true) {
-        emptyString += passwordUpper;
+        emptyString += stringUpper;
       }
       if (passwordLower === true) {
-        emptyString += passwordLower;
+        emptyString += stringLower;
       }
       if (passwordNumeric === true) {
-        emptyString += passwordNumeric;
+        emptyString += stringNumeric;
       }
       if (passwordSpecial === true) {
-        emptyString += passwordSpecial;
+        emptyString += stringSpecial;
       }
       console.log (emptyString)
       var password = "";
