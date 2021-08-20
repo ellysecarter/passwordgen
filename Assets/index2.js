@@ -1,6 +1,5 @@
-// / Assignment Code
-
 var generateBtn = document.querySelector("#generate");
+var passwordText = document.querySelector("#password");
 var delayInMilliseconds = 1000;
 
 function writePassword() {
@@ -25,11 +24,13 @@ function writePassword() {
       var stringNumeric = "0987654321";
       var stringSpecial = '!@#$%^&*()_+={}[]|?/><:;"';
 
+
       if (passwordUpper === true) {
         emptyString += stringUpper;
       }else {
         window.alert ("You have denied uppercase letters.")
       }
+
 
       if (passwordLower === true) {
         emptyString += stringLower;
@@ -49,26 +50,23 @@ function writePassword() {
     window.alert ("You have denied special characters.")
   }
 
-      var password = alert("");
+      var password = "";
       for (var i = 0; i < passwordLength; i++) {
         password += emptyString.charAt(
           Math.floor(Math.random() * emptyString.length)
         );
       }
-      console.log(password);
+      console.log(password)
       return password;
-
-      
-    }
-    generatePassword()
-  } 
-  else {
-    window.alert("Password must be between 8 and 128 characters.");
   }
-}, 500); 
+  generatePassword ()
+} else {
+  window.alert("Password must be between 8 and 128 characters.");
+  }
+}, 500);
 }
 
-document.getElementById("password").innerHTML = ""
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword());
